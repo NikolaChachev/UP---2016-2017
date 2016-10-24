@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+int main()
+{
+	int digit1, digit2, digit3, number;
+	cout << "Enter a 3 digit number" << endl;
+	cin >> number;
+	if (number > 999 || number < 10)
+		cout << "Thats not 3 digits you MORON ! " << endl;
+	else
+	{
+		digit1 = number / 100;
+		digit2 = (number / 10) % 10;
+		digit3 = number % 10;
+		if (digit1 == digit2 || digit2 == digit3 || digit3 == digit1)
+			cout << "There are repeating digits in the number" << endl;
+		else
+			cout << "There aren`t any repeating digits in the number" << endl;
+
+	}
+
+    return 0;
+}

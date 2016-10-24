@@ -1,0 +1,54 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+int main()
+{
+	int a, b, c;
+	double D, x1, x2;
+	cout << "Insert 3 variables for a b and c";
+	cin >> a >> b >> c;
+
+	if (a == 0)
+	{
+		if (b == 0)
+		{
+			if (c == 0)
+			{
+				cout << "Every X is a root ^.^" << endl;
+			}
+			else
+			{
+				cout << "Not Solvable :'( " << endl;
+			}
+		}
+		else
+		{
+			x1 = -c / b;
+			cout << "Only one root equal to X=" << x1 << endl;
+		}
+	}
+	else
+	{
+		D = b*b - 4 * a * c;
+		cout << "D=" << D << endl;
+		if (D < 0)
+			cout << "No roots for X" << endl;
+		else if (D == 0)
+		{
+			x1 = -b / (2 * a);
+			cout << "One double root equal to X=" << x1 << endl;
+		}
+		else
+		{
+			x1 = (-b + sqrt(D)) / (2 * a);
+			x2 = (-b - sqrt(D)) / (2 * a);
+			cout << "There are two roots equal to X1=" << x1 << " and X2=" << x2 << endl;
+
+		}
+	}
+
+    return 0;
+}

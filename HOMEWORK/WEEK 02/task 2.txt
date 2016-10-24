@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int X;
+	cout << "Enter a number that is a factor of 2 and 3 but not of 5" << endl;
+	cin >> X;
+	if ((X % 2) == 0 && (X % 3) == 0 (X % 5) != 0)
+		cout << "YAY YOU ENTERED A CORRECT NUMBER!" << endl;
+	else
+	{
+		cout << "GO BACK TO THIRD GRADE!" << " YOU DON`T DESERVE TO BE HERE..." << endl;
+		
+	}
+
+
+    return 0;
+}

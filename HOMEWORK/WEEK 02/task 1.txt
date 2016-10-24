@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int A, num1;
+	cout << "Insert values for A and B" << endl;
+	cin >> A >> num1;
+	if ((A % num1) == 0)
+		cout << "A is a factor of B" << endl;
+	else
+		cout << "A is not a factor of B" << endl;
+
+
+
+
+
+    return 0;
+}
