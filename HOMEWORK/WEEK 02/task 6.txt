@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+int main()
+{
+	int number, first3, second3;
+	cout << "Enter a 6 digit number" << endl;
+	cin >> number;
+	if (number > 999999 || number < 100000)
+	{
+		cout << "Error ! Not a 6 digit number" << endl;
+	}
+	else
+	{
+		first3 = number / 1000;
+		second3 = number % 1000;
+		if (first3 < second3)
+		{
+			cout << "YES" << endl;
+		}
+		else
+		{
+			cout << "NO" << endl;
+		}
+	}
+	return 0;
+}
