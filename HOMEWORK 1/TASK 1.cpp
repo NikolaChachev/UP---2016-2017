@@ -1,3 +1,5 @@
+// TASK 1.cpp : Defines the entry point for the console application.
+//
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
@@ -8,7 +10,7 @@ int main()
 
 	double num1, num2, num3, num4, num5;
 	cout << "Enter 5 real numbers" << endl;
-	cout << "first number="; 
+	cout << "first number=";
 	cin >> num1;
 	cout << "second number=";
 	cin >> num2;
@@ -44,5 +46,5 @@ int main()
 
 
 
-    return 0;
+	return 0;
 }
